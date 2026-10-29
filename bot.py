@@ -84,7 +84,14 @@ async def roaroicbot_start():
     today = date.today()
     now = datetime.now(tz)
     time_str = now.strftime("%H:%M:%S %p")
-    await roaroicbot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(temp.B_LINK, today, time_str))
+    try:
+        await roaroicbot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(temp.B_LINK, today, time_str))
+    except Exception as e:
+        # A wrong LOG_CHANNEL id, or the bot not being an admin there, must not stop the bot from starting.
+        logging.error(
+            f"Could not send restart message to LOG_CHANNEL ({LOG_CHANNEL}): {type(e).__name__}: {e}. "
+            "Check that LOG_CHANNEL is the full id (starts with -100), and that the bot is added as an admin in that channel."
+        )
     app = web.AppRunner(await web_server())
     await app.setup()
     bind_address = "0.0.0.0"
