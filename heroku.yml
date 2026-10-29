@@ -1,0 +1,7 @@
+# ─────────────────────────────────────────────
+# Powered by Roaroic | Developer Channel: @roaroic0
+# https://t.me/roaroic0
+# ─────────────────────────────────────────────
+build:
+  docker:
+      worker: Dockerfile

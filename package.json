@@ -1,0 +1,14 @@
+{
+  "name": "autofilter-premium-feature",
+  "version": "1.0.0",
+  "description": "Autofilter Premium Feature | Powered by Roaroic | Developer Channel: @roaroic0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "author": "Roaroic (@roaroic0)",
+  "homepage": "https://t.me/roaroic0"
+}
