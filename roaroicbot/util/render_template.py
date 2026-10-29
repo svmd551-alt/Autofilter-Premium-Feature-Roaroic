@@ -1,0 +1,50 @@
+# ─────────────────────────────────────────────
+# Powered by Roaroic | Developer Channel: @roaroic0
+# https://t.me/roaroic0
+# ─────────────────────────────────────────────
+#Thanks @roaroic0 for helping in this journey 
+
+import jinja2
+from info import *
+from roaroicbot.Bot import roaroicbot
+from roaroicbot.util.human_readable import humanbytes
+from roaroicbot.util.file_properties import get_file_ids
+from roaroicbot.server.exceptions import InvalidHash
+import urllib.parse
+import logging
+
+
+async def render_page(id, secure_hash, src=None):
+    file_data = await get_file_ids(roaroicbot, int(BIN_CHANNEL), int(id))
+    if file_data.unique_id[:6] != secure_hash:
+        logging.debug(f"Invalid hash for message with - ID {id}")
+        raise InvalidHash
+
+    raw_name = file_data.file_name or f"{file_data.unique_id[:8]}"
+    base = urllib.parse.urljoin(
+        URL,
+        f"{id}/{urllib.parse.quote(raw_name, safe='')}?hash={secure_hash}",
+    )
+    src = base + "&stream=1"      # inline -> plays in <video>/<audio>
+    download_url = base           # attachment -> saves to disk
+
+    mime = file_data.mime_type or "application/octet-stream"
+    tag = mime.split("/")[0].strip()
+    # size comes from the Telegram message itself (the old code downloaded
+    # the whole file from our own server just to read Content-Length)
+    file_size = humanbytes(file_data.file_size)
+    if tag in ["video", "audio"]:
+        template_file = "roaroicbot/template/req.html"
+    else:
+        template_file = "roaroicbot/template/dl.html"
+
+    with open(template_file, encoding="utf-8") as f:
+        template = jinja2.Environment(autoescape=True).from_string(f.read())
+
+    return template.render(
+        file_name=raw_name.replace("_", " "),
+        file_url=src,
+        download_url=download_url,
+        file_size=file_size,
+        file_unique_id=file_data.unique_id,
+    )
