@@ -108,9 +108,9 @@ LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-100')) #Verification Channe
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-100')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
 
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/roaroicgroup")   # Tutorial link for verification
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/kingo_serial")   # Second tutorial link for verification
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/kingo_serial")   # Third tutorial link for verification
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/+gLBpbDa_b5JkMGQ1")   # Tutorial link for verification
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/+kzUmIPmlJN1jMjc1")   # Second tutorial link for verification
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/+kzUmIPmlJN1jMjc1")   # Third tutorial link for verification
 
 # Verification (Must Fill All Veriables. Else You Got Error
 SHORTENER_API = environ.get("SHORTENER_API", "1e72bd1274625811043cb1d1ca2dbcbe77e9fdd2") # Shortener API key
@@ -131,9 +131,9 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/roaroicgroup') # Group link for the bot
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/roaroic0') # Owner link for the bot
-UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/kingo_serial') # Update channel link for the bot
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+gLBpbDa_b5JkMGQ1') # Group link for the bot
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/+kzUmIPmlJN1jMjc1') # Owner link for the bot
+UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/+yCN2FC62QmIyM2Fl') # Update channel link for the bot
 
 # ============================
 # User Configuration
@@ -300,7 +300,7 @@ LOG_STR += ("Spell Check Mode is enabled, bot will be suggesting related movies 
 # ============================
 # Developer Credit (Roaroic)
 # ============================
-DEV_NAME = "Roaroic"
-DEV_CHANNEL = "@roaroic0"
-DEV_CHANNEL_LNK = "https://t.me/roaroic0"
+DEV_NAME = "Ganesh"
+DEV_CHANNEL = "@PeterParker6081"
+DEV_CHANNEL_LNK = "https://t.me/+kzUmIPmlJN1jMjc1"
 DEV_CREDIT = f"Powered by {DEV_NAME} | Developer Channel: {DEV_CHANNEL}"
