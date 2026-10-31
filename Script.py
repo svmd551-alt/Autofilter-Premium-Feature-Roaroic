@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────
-# Powered by Roaroic | Developer Channel: @roaroic0
-# https://t.me/roaroic0
+# Powered by Roaroic | Developer Channel: auto filter bot
+# https://t.me/+gLBpbDa_b5JkMGQ1
 # ─────────────────────────────────────────────
 class script(object):
     START_TXT = """<b>👋 ʜᴇʏ {}, {}</b>
