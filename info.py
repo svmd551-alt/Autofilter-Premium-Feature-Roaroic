@@ -91,8 +91,8 @@ DATABASE_URI2 = environ.get('DATABASE_URI2', "")  # MongoDB URI for the second d
 # ============================
 # Movie Notification & Update Settings
 # ============================
-MOVIE_UPDATE_NOTIFICATION = is_enabled(str(environ.get('MOVIE_UPDATE_NOTIFICATION', True)), True)  # Notification On (True) / Off (False)
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1003900854538'))  # Notification of sent to your channel
+MOVIE_UPDATE_NOTIFICATION = is_enabled(str(environ.get('https://t.me/+yCN2FC62QmIyM2Fl', True)), True)  # Notification On (True) / Off (False)
+MOVIE_UPDATE_CHANNEL = int(environ.get('https://t.me/+yCN2FC62QmIyM2Fl', '-1004317238657'))  # Notification of sent to your channel
 ROAROIC_IMAGE_FETCH = is_enabled(str(environ.get('ROAROIC_IMAGE_FETCH', True)), True)  # On (True) / Off (False)
 LINK_PREVIEW = is_enabled(str(environ.get('LINK_PREVIEW', True)), True) # Shows link preview in notification msg instead of image
 ABOVE_PREVIEW = is_enabled(str(environ.get('ABOVE_PREVIEW', True)), True) # Shows link preview above the text in notification msg if True else below the msg
@@ -108,9 +108,9 @@ LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-100')) #Verification Channe
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-100')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
 
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/roaroicgroup")   # Tutorial link for verification
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/kingo_serial")   # Second tutorial link for verification
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/kingo_serial")   # Third tutorial link for verification
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/+gLBpbDa_b5JkMGQ1")   # Tutorial link for verification
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/+kzUmIPmlJN1jMjc1")   # Second tutorial link for verification
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/+kzUmIPmlJN1jMjc1")   # Third tutorial link for verification
 
 # Verification (Must Fill All Veriables. Else You Got Error
 SHORTENER_API = environ.get("SHORTENER_API", "1e72bd1274625811043cb1d1ca2dbcbe77e9fdd2") # Shortener API key
@@ -131,9 +131,9 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/roaroicgroup') # Group link for the bot
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/roaroic0') # Owner link for the bot
-UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/kingo_serial') # Update channel link for the bot
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+gLBpbDa_b5JkMGQ1') # Group link for the bot
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/+kzUmIPmlJN1jMjc1') # Owner link for the bot
+UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/+yCN2FC62QmIyM2Fl') # Update channel link for the bot
 
 # ============================
 # User Configuration
@@ -237,7 +237,7 @@ SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'Roaroic'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'ROAROIC'))
+name = str(environ.get('name', 'GANESH'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "600"))  # 10 minutes (Render free sleeps after 15 min idle)
 HAS_SSL = is_enabled(str(getenv('HAS_SSL', True)), True)
 if HAS_SSL:
@@ -248,7 +248,7 @@ else:
 # ============================
 # Reactions Configuration
 # ============================
-REACTIONS = ["🤝", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "🤣", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁","🤯", "🙏", "👌", "🕊", "🤡", "🥴", "🐳", "💯", "🍓", "🍾","💋", "😭", "👀", "🎃", "🙈", "🎄", "💅", "🗿", "🦄", "👾"]
+REACTIONS = ["🤝", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "❤️", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁","🤯", "🙏", "👌", "🕊", "🫶🏻", "🥴", "🐳", "💯", "🍓", "🍾","💋", "😭", "👀", "🎃", "🙈", "🎄", "💅", "🗿", "🦄", "👾"]
 
 # ============================
 # Commands Bot
@@ -300,7 +300,7 @@ LOG_STR += ("Spell Check Mode is enabled, bot will be suggesting related movies 
 # ============================
 # Developer Credit (Roaroic)
 # ============================
-DEV_NAME = "Roaroic"
-DEV_CHANNEL = "@roaroic0"
-DEV_CHANNEL_LNK = "https://t.me/roaroic0"
+DEV_NAME = "Ganesh"
+DEV_CHANNEL = "@PeterParker6081"
+DEV_CHANNEL_LNK = "https://t.me/+kzUmIPmlJN1jMjc1"
 DEV_CREDIT = f"Powered by {DEV_NAME} | Developer Channel: {DEV_CHANNEL}"
