@@ -91,8 +91,8 @@ DATABASE_URI2 = environ.get('DATABASE_URI2', "")  # MongoDB URI for the second d
 # ============================
 # Movie Notification & Update Settings
 # ============================
-MOVIE_UPDATE_NOTIFICATION = is_enabled(str(environ.get('MOVIE_UPDATE_NOTIFICATION', True)), True)  # Notification On (True) / Off (False)
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1003900854538'))  # Notification of sent to your channel
+MOVIE_UPDATE_NOTIFICATION = is_enabled(str(environ.get('https://t.me/+yCN2FC62QmIyM2Fl', True)), True)  # Notification On (True) / Off (False)
+MOVIE_UPDATE_CHANNEL = int(environ.get('https://t.me/+yCN2FC62QmIyM2Fl', '-1004317238657'))  # Notification of sent to your channel
 ROAROIC_IMAGE_FETCH = is_enabled(str(environ.get('ROAROIC_IMAGE_FETCH', True)), True)  # On (True) / Off (False)
 LINK_PREVIEW = is_enabled(str(environ.get('LINK_PREVIEW', True)), True) # Shows link preview in notification msg instead of image
 ABOVE_PREVIEW = is_enabled(str(environ.get('ABOVE_PREVIEW', True)), True) # Shows link preview above the text in notification msg if True else below the msg
@@ -133,7 +133,7 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 # ============================
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+gLBpbDa_b5JkMGQ1') # Group link for the bot
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/+kzUmIPmlJN1jMjc1') # Owner link for the bot
-UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/+yCN2FC62QmIyM2Fl') # Update channel link for the bot
+UPDATE_CHNL_LNK = environ.get('https://t.me/+yCN2FC62QmIyM2Fl', 'https://t.me/+yCN2FC62QmIyM2Fl') # Update channel link for the bot
 
 # ============================
 # User Configuration
@@ -237,7 +237,7 @@ SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'Roaroic'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'ROAROIC'))
+name = str(environ.get('name', 'GANESH'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "600"))  # 10 minutes (Render free sleeps after 15 min idle)
 HAS_SSL = is_enabled(str(getenv('HAS_SSL', True)), True)
 if HAS_SSL:
@@ -248,7 +248,7 @@ else:
 # ============================
 # Reactions Configuration
 # ============================
-REACTIONS = ["🤝", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "🤣", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁","🤯", "🙏", "👌", "🕊", "🤡", "🥴", "🐳", "💯", "🍓", "🍾","💋", "😭", "👀", "🎃", "🙈", "🎄", "💅", "🗿", "🦄", "👾"]
+REACTIONS = ["🤝", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "❤️", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁","🤯", "🙏", "👌", "🕊", "🫶🏻", "🥴", "🐳", "💯", "🍓", "🍾","💋", "😭", "👀", "🎃", "🙈", "🎄", "💅", "🗿", "🦄", "👾"]
 
 # ============================
 # Commands Bot
